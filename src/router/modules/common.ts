@@ -4,13 +4,24 @@ export default [
   {
     path: '/',
     name: 'main',
-    redirect: '/demo',
+    redirect: '/bookshelf',
     component: () => import('@/views/index.vue'),
     children: [
       {
-        path: '/demo',
-        name: 'demoHome',
-        component: () => import('@/views/demo/home/index.vue'),
+        path: '/bookshelf',
+        name: 'legadoBookshelf',
+        component: () => import('@/views/legado/bookshelf/index.vue'),
+        meta: {
+          title: '书架',
+        },
+      },
+      {
+        path: '/mine',
+        name: 'legadoMine',
+        component: () => import('@/views/legado/mine/index.vue'),
+        meta: {
+          title: '我的',
+        },
       },
     ],
   },

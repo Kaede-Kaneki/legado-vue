@@ -1,4 +1,5 @@
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router'
+import { setGuards } from './guards'
 
 const routes = ((s) =>
   Object.values(s).reduce<RouteRecordRaw[]>(
@@ -10,5 +11,7 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
+
+setGuards(router)
 
 export default router

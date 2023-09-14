@@ -1,5 +1,5 @@
 <template>
-  <div class="">Component</div>
+  <div class=""> 书架 </div>
 </template>
 
 <script setup lang="ts"></script>
