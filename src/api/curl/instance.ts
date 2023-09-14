@@ -1,7 +1,7 @@
 import axios, { InternalAxiosRequestConfig } from 'axios'
 
 const instance = axios.create({
-  baseURL: 'http:10.50.105.174:1122',
+  baseURL: 'http://10.50.105.174:1122',
   timeout: 120 * 1000,
   responseType: 'json',
   headers: {
